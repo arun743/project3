@@ -1,0 +1,32 @@
+<language-addon>
+    <addon-name>wsf</addon-name>
+  	<version>
+		<version-class>mfh.Version</version-class>
+		<version-uid>1.0-SNAPSHOT</version-uid>
+		<zk-version>9.6.0</zk-version><!-- or later -->
+	</version>
+    
+	<language-name>xul/html</language-name>
+	<component>
+		<component-name>edf</component-name> <!-- required -->
+		<component-class>mfh.vsh</component-class> <!-- required -->
+		<widget-class>wsf.vsh</widget-class> <!-- required -->
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/edf.js</mold-uri>
+
+			<!--
+			== Tip in advance ==
+				You don't have to specify a css.dsp if you need not ,
+				but usually you need it.
+
+				You could assign a .css file ,too.
+
+				The css.dsp is almost as same as CSS file ,
+				but have more powerful enhancement.	(like EL support.)
+			====
+			-->
+			<css-uri>css/edf.css.dsp</css-uri>
+		</mold>
+	</component>
+</language-addon>
